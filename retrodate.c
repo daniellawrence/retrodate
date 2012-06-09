@@ -1,15 +1,17 @@
 /* 
-print retro time 
+print retro time.
 
-Author: Danny Lawrence (dannyla@toll.com.au)
-DATE: Tue May  4 17:29:41 EST 2010
+Takes an offset and a date format then prints out the current date + the offset
+In the requested fromat.
 
+Author: Danny Lawrence (daniel@daniescottlawrence.com)
 */
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+// One Day is 60 seconds * 60 minutes * 24 hours
 #define  ONEDAY 60*60*24
 
 main(int argc, char **argv)
